@@ -1,0 +1,172 @@
+:root {
+    --black: #333;
+    --dark: rgb(170, 170, 170);
+    --blacklight: rgb(104, 101, 101);
+    --white: #fff;
+    --blue: #3440ab;
+    --lightblue: #78a8cf;
+    --red: #ee4c24;
+    --light: rgb(248, 242, 242);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white);
+}
+
+.navbar {
+    /* background: var(--lightblue) !important; */
+    /* box-shadow: 0 5px 5px 0 rgba(134, 128, 128, 0.5); */
+    background: var(--light) !important;
+    /* border-bottom: 1px dotted gray; */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+.nav-item .nav-link {
+    color: var(--dark) !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--blacklight) !important;
+}
+
+.nav-link.active:hover {
+    color: var(--black) !important;
+}
+
+.nav-link.active {
+    color: var(--black) !important;
+}
+
+.passport-border-color {
+    background: var(--black);
+    border-radius: 50%;
+    border: 4px solid var(--black);
+    z-index: 999;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: -1.9rem;
+}
+
+.social-links>li {
+    color: var(--blacklight);
+    letter-spacing: 0.4rem;
+    margin-right: 1rem;
+}
+
+p {
+    font-size: 1rem !important;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+}
+
+div .ball-animate:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(185, 244, 248));
+    z-index: -99;
+    opacity: 0.6;
+    animation: float 10s infinite;
+    animation-timing-function: ease-in;
+}
+
+div .ball {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(185, 244, 248));
+    z-index: -99;
+    opacity: 0.6;
+}
+
+div .ball:nth-child(2) {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}
+
+div .ball-animate:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(185, 244, 248));
+    z-index: -99;
+    opacity: 0.6;
+    animation: floatb 10s infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes float {
+    from {
+        top: 0px;
+        left: 100px;
+    }
+    to {
+        top: 100px;
+        left: 400px;
+    }
+}
+
+@keyframes floatb {
+    from {
+        top: 0px;
+        right: 100px;
+    }
+    to {
+        top: 100px;
+        right: 400px;
+    }
+}
+
+
+/* .progress-bgcolor {
+    background-color: rgb(185, 244, 248) !important;
+} */
+
+@media (max-width: 765px) {
+    .passport-res {
+        width: 50%;
+        height: 50%;
+        z-index: -99;
+    }
+    .passport-border {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    div .ball-animate {
+        display: none;
+    }
+}
