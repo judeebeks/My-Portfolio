@@ -1,0 +1,73 @@
+[{
+        "question": "Inside which HTML element do we put the JavaScript??",
+        "choice1": "<script>",
+        "choice2": "<javascript>",
+        "choice3": "<js>",
+        "choice4": "<scripting>",
+        "answer": 1
+    },
+    {
+        "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+        "choice1": "<script href='xxx.js'>",
+        "choice2": "<script name='xxx.js'>",
+        "choice3": "<script src='xxx.js'>",
+        "choice4": "<script file='xxx.js'>",
+        "answer": 3
+    },
+    {
+        "question": " How do you write 'Hello World' in an alert box?",
+        "choice1": "msgBox('Hello World');",
+        "choice2": "alertBox('Hello World');",
+        "choice3": "msg('Hello World');",
+        "choice4": "alert('Hello World');",
+        "answer": 4
+    },
+    {
+        "question": "What country saw a world record 315 million voters turn out for elections on May 20, 1991?",
+        "choice1": "United States of America",
+        "choice2": "Soviet Union",
+        "choice3": "India",
+        "choice4": "Poland",
+        "answer": 3
+    },
+    {
+        "question": "What alcoholic drink is mainly made from juniper berries?",
+        "choice1": "Gin",
+        "choice2": "Vodka",
+        "choice3": "Tequila",
+        "choice4": "Rum",
+        "answer": 1
+    },
+    {
+        "question": "In 2013 how much money was lost by Nigerian scams?",
+        "choice1": "$95 Million",
+        "choice2": "$12.7 Billion",
+        "choice3": "$956 Million",
+        "choice4": "$2.7 Billion",
+        "answer": 2
+    },
+    {
+        "question": "What is the last letter of the Greek alphabet?",
+        "choice1": "Mu",
+        "choice2": "Omega",
+        "choice3": "Epsilon",
+        "choice4": "Kappa",
+        "answer": 2
+    },
+    {
+        "question": "When was Hubba Bubba first introduced?",
+        "choice1": "1984",
+        "choice2": "1979",
+        "choice3": "1980",
+        "choice4": "1972",
+        "answer": 2
+    },
+    {
+        "question": "Where does water from Poland Spring water bottles come from?",
+        "choice1": "Hesse, Germany",
+        "choice2": "Masovia, Poland",
+        "choice3": "Maine, United States",
+        "choice4": "Bavaria, Poland",
+        "answer": 3
+    }
+]

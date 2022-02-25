@@ -47,14 +47,6 @@ body {
     color: var(--blacklight) !important;
 }
 
-.nav-link.active:hover {
-    color: var(--black) !important;
-}
-
-.nav-link.active {
-    color: var(--black) !important;
-}
-
 .passport-border-color {
     background: var(--black);
     border-radius: 50%;
@@ -65,13 +57,13 @@ body {
 .social-links {
     list-style: none;
     display: flex;
+    justify-content: start;
     margin-top: 1rem;
     margin-left: -1.9rem;
 }
 
 .social-links>li {
     color: var(--blacklight);
-    letter-spacing: 0.4rem;
     margin-right: 1rem;
 }
 
@@ -150,6 +142,15 @@ div .ball-animate:nth-child(2) {
     }
 }
 
+.project-display {
+    transition: ease-in 0.3s;
+}
+
+.project-display:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+}
+
 
 /* .progress-bgcolor {
     background-color: rgb(185, 244, 248) !important;
@@ -172,5 +173,9 @@ div .ball-animate:nth-child(2) {
     }
     div .ball-animate {
         display: none;
+    }
+    .social-links {
+        justify-content: center;
+        margin-left: -1.9rem;
     }
 }

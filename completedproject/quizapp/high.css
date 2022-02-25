@@ -1,0 +1,10 @@
+ul {
+    margin-bottom: 2rem;
+    margin-left: 0;
+}
+
+.highscore {
+    list-style: none;
+    padding: 0.4rem;
+    font-size: 2.5rem;
+}

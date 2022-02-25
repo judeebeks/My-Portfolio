@@ -1,0 +1,129 @@
+:root {
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+    /*10px */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #56a5eb;
+}
+
+h1>span {
+    /* h1>span selects all the span tag of the parent h1 tag */
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+
+/* UTILITIES */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    /*This sets a maximum width which is included in the container width */
+    margin: 0 auto;
+    padding: 2rem;
+    /* The margin auto left and right centers the objects in the container as well as the max-widht*/
+}
+
+.container>* {
+    /* .container > * selects the * or all element of the parent container or the container*/
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    /* 0=top 0.4=right 1.4=bottom 0=left */
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+input {
+    height: 6rem;
+    border: none;
+    box-shadow: 0 0.2rem 0.4rem rgba(86, 185, 235, 0.5);
+    margin: 1rem;
+    width: 20rem;
+    font-size: 2rem;
+    padding: 1.4rem;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-size: 2rem;
+}
