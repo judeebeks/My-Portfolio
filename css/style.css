@@ -151,10 +151,35 @@ div .ball-animate:nth-child(2) {
     transform: scale(1.2);
 }
 
+.btn1 {
+    border: none;
+    outline: none;
+    padding: 5px 13px;
+    font-size: 1.2rem;
+    background: rgb(247, 140, 98);
+    border-radius: 15px;
+    color: #fff;
+    transition: 0.3s;
+}
 
-/* .progress-bgcolor {
-    background-color: rgb(185, 244, 248) !important;
-} */
+.btn1:hover {
+    background: rgb(245, 106, 51);
+}
+
+.top-arrow {
+    bottom: 70px !important;
+    right: 50px !important;
+}
+
+.top-arrow-link {
+    color: #111;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.top-arrow-link:hover {
+    color: #333;
+}
 
 @media (max-width: 765px) {
     .passport-res {
