@@ -6,7 +6,8 @@
     --blue: #3440ab;
     --lightblue: #78a8cf;
     --red: #ee4c24;
-    --light: rgb(248, 242, 242);
+    --light: rgb(245, 157, 122);
+    --redlight: rgb(245, 106, 51);
 }
 
 * {
@@ -21,13 +22,19 @@
     color: var(--dark);
 }
 
+.text-main {
+    color: var(--redlight) !important;
+}
+
+.bg-main {
+    background: var(--redlight) !important;
+}
+
 body {
     background: var(--white);
 }
 
 .navbar {
-    /* background: var(--lightblue) !important; */
-    /* box-shadow: 0 5px 5px 0 rgba(134, 128, 128, 0.5); */
     background: var(--light) !important;
     /* border-bottom: 1px dotted gray; */
 }
@@ -37,29 +44,36 @@ body {
 }
 
 .nav-item .nav-link {
-    color: var(--dark) !important;
+    color: var(--white) !important;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
 }
 
 .nav-item .nav-link:hover {
-    color: var(--blacklight) !important;
+    color: var(--redlight) !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.fa-bars {
+    font-size: 1.9rem !important;
 }
 
 .passport-border-color {
-    background: var(--black);
+    background: var(--light);
     border-radius: 50%;
-    border: 4px solid var(--black);
+    border: 4px solid var(--redlight);
     z-index: 999;
+    -ms-transform: rotate(320deg);
+    transform: rotate(320deg);
 }
 
 .social-links {
     list-style: none;
     display: flex;
-    justify-content: start;
-    margin-top: 1rem;
-    margin-left: -1.9rem;
 }
 
 .social-links>li {
@@ -85,7 +99,7 @@ div .ball-animate:nth-child(1) {
     height: 200px;
     position: absolute;
     border-radius: 50%;
-    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(185, 244, 248));
+    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(248, 180, 103));
     z-index: -99;
     opacity: 0.6;
     animation: float 10s infinite;
@@ -97,7 +111,7 @@ div .ball {
     height: 50px;
     position: absolute;
     border-radius: 50%;
-    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(185, 244, 248));
+    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(248, 180, 103));
     z-index: -99;
     opacity: 0.6;
 }
@@ -113,7 +127,7 @@ div .ball-animate:nth-child(2) {
     height: 200px;
     position: absolute;
     border-radius: 50%;
-    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(185, 244, 248));
+    background-image: radial-gradient( closest-side at 60% 55%, rgb(254, 255, 255), rgb(248, 180, 103));
     z-index: -99;
     opacity: 0.6;
     animation: floatb 10s infinite;
@@ -166,19 +180,88 @@ div .ball-animate:nth-child(2) {
     background: rgb(245, 106, 51);
 }
 
+.form-control {
+    outline: none !important;
+}
+
+.form-control:focus {
+    border: 1px solid var(--redlight) !important;
+    box-shadow: none !important;
+}
+
 .top-arrow {
     bottom: 70px !important;
     right: 50px !important;
 }
 
 .top-arrow-link {
-    color: #111;
+    color: var(--redlight);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .top-arrow-link:hover {
-    color: #333;
+    color: var(--light);
+}
+
+.fa-facebook-f:hover,
+.fa-github:hover,
+.fa-twitter:hover,
+.fa-phone:hover {
+    color: #2f41dd;
+}
+
+footer {
+    border-top: 0.1rem solid var(--light) !important;
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #2487ce;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 765px) {
@@ -201,6 +284,21 @@ div .ball-animate:nth-child(2) {
     }
     .social-links {
         justify-content: center;
-        margin-left: -1.9rem;
+        margin-left: 1rem;
+    }
+    .top-arrow {
+        bottom: 40px !important;
+        right: 40px !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
     }
 }

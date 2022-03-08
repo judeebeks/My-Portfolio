@@ -10,15 +10,18 @@ const updateYear = (yearUpdate, year) => {
 
 updateYear(NewDate, presentYear);
 
-// form.addEventListener("submit", (e) => {
-//     let errorMessage = [];
+const select = (el, all = false) => {
+    el = el.trim();
+    if (all) {
+        return [...document.querySelectorAll(el)];
+    } else {
+        return document.querySelector(el);
+    }
+};
 
-//     if (input.value.trim().length < 1) {
-//         errorMessage.push("Enter a text!");
-//     }
-
-//     if (errorMessage.length > 0) {
-//         e.preventDefault();
-//         message.innerHTML = errorMessage.toString();
-//     }
-// });
+let preloader = select("#preloader");
+if (preloader) {
+    window.addEventListener("load", () => {
+        preloader.remove();
+    });
+}
