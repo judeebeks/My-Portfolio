@@ -215,11 +215,6 @@ footer {
     border-top: 0.1rem solid var(--light) !important;
 }
 
-
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-
 #preloader {
     position: fixed;
     top: 0;
@@ -236,7 +231,7 @@ footer {
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 6px solid #2487ce;
+    border: 6px solid var(--light);
     border-top-color: #fff;
     border-bottom-color: #fff;
     border-radius: 50%;
