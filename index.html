@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/fontawesome-all.css" />
-    <link rel="stylesheet" href="./assests/aos/aos.css" />
-    <link rel="stylesheet" href="./assests/remixicon/remixicon.css" />
+    <link rel="stylesheet" href="../assests/aos/aos.css" />
+    <link rel="stylesheet" href="../assests/remixicon/remixicon.css" />
     <script src="../js/nav.js" defer></script>
     <script src="../js/index.js" defer></script>
     <script src="../js/bootstrap.min.js" defer></script>
@@ -18,10 +18,11 @@
   </head>
 
   <body>
+    <input type="checkbox" id="check" />
     <nav class="navbar navbar-expand-lg navbar-light p-4" id="home">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="../img/judelogo.png" height="60" alt="" />
+          <h2>J. Ebeke</h2>
         </a>
         <button
           class="navbar-toggler text-white"
@@ -32,7 +33,10 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span><i class="fa fa-bars"> </i></span>
+          <span for="check" class="bar"
+            ><i class="fa fa-bars" id="bar"></i>
+            <i class="fa fa-times" id="time"></i
+          ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
@@ -68,10 +72,9 @@
           <div class="row text-center text-md-start">
             <div class="col-12">
               <p>
-                <strong>Jude Ebeke</strong> is a Computer Instructor at Federal
-                Government College Kaduna. He has passion for Web Development
-                and does Graphics Design as a hobby. He aspire's to be a
-                Software Engineer. Below are some of his projects done.
+                Hi! My name is <strong>Jude Ebeke</strong>, I am a Web Developer
+                and a Graphics Designer. I work as a Computer Instructor for
+                Infosys Digital Solutions. I aspire to be a Software Engineer.
               </p>
             </div>
             <div class="col-4 m-auto m-md-0">
@@ -183,12 +186,12 @@
             <div
               class="progress-bar bg-main"
               role="progressbar"
-              style="width: 25%"
-              aria-valuenow="25"
+              style="width: 30%"
+              aria-valuenow="30"
               aria-valuemin="0"
               aria-valuemax="100"
             >
-              25%
+              30%
             </div>
           </div>
         </div>
@@ -203,20 +206,20 @@
         </div>
         <div class="col-md-5 pt-4" data-aos="fade-down" data-aos-delay="200">
           <img
-            src="../img/todoapp.jpg"
+            src="./img/xando.jpg"
             class="img-fluid mb-4 project-display"
             alt=""
           />
-          <h5>A Dynamic Todo App</h5>
+          <h5>Tic Tic Tac Tac</h5>
           <p>
-            A cool and dynamic Todo App with basic functionalities like delete,
-            add and update functions. Add your Todo list in the app and explore
-            the functionalities.
+            A cool board game build with HTML, CSS and JavaScript. Although not
+            so responsive, the game functionality was really fun building with
+            JavaScript.
           </p>
           <a
             type="button"
             class="text-decoration-none text-main"
-            href="../completedproject/todoapp/index.html"
+            href="https://superxando.netlify.app"
             target="__blank"
             >Go to App <i class="fa fa-caret-right"></i
           ></a>
@@ -278,6 +281,45 @@
             href="../completedproject/quizapp/index.html"
             target="__blank"
             >Go to App <i class="fa fa-caret-right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="row pt-5 d-flex justify-content-between">
+        <div class="col-md-5 pt-4" data-aos="fade-down" data-aos-delay="200">
+          <img
+            src="./img/expenseapp.jpg"
+            class="img-fluid mb-4 project-display"
+            style="object-fit: cover"
+            alt=""
+          />
+          <h5>Tic-Tic Tac-Tac</h5>
+          <p>
+            Expenzi-O as I named it is an expense tracker application BUILT WITH
+            HTML, CSS and JavaScript. The app keeps track of the total sum of
+            expense entered by the user.
+          </p>
+          <a
+            type="button"
+            class="text-decoration-none text-main"
+            href="./completedproject/expensetrackerapp/index.html"
+            target="__blank"
+            >Go to App <i class="fa fa-caret-right"></i
+          ></a>
+        </div>
+        <div class="col-md-5 pt-4" data-aos="fade-down" data-aos-delay="200">
+          <img
+            src="./img/Techie Genie.jpg"
+            class="img-fluid mb-4 project-display"
+            alt=""
+          />
+          <h5>Techie Genie</h5>
+          <p>
+            Techie Genie is my brand, which I promote to advertise other
+            services I offer such as Logo design, Flyer design, Book cover and
+            Complementary card design.
+          </p>
+          <a href="tel:+2349023176326" class="text-decoration-none text-main"
+            >Call me now <i class="fa fa-phone"></i
           ></a>
         </div>
       </div>
@@ -408,7 +450,7 @@
       id="contact"
     >
       <div class="top-arrow position-absolute">
-        <a href="#home" class="top-arrow-link text-decoration-none"
+        <a class="top-arrow-link text-decoration-none"
           ><i class="fa fa-arrow-alt-circle-up fa-3x"></i
         ></a>
       </div>
@@ -446,11 +488,15 @@
         </li>
       </ul>
 
-      <p class="py-1">judeebekes67@gmail.com</p>
+      <a
+        href="mailto:judeebekes67@gmail.com"
+        class="text-decoration-none text-gray py-1"
+        >judeebekes67@gmail.com</a
+      >
 
       <p class="lead py-1">
-        developedbyEbekes <br />
-        @copy <span id="year"></span>
+        developedbyJDEbekes <br />
+        @Copyright <span id="year"></span>
       </p>
     </footer>
 

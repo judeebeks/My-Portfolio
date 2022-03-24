@@ -1,6 +1,6 @@
 :root {
-    --black: #333;
-    --dark: rgb(170, 170, 170);
+    --black: rgb(26, 25, 25);
+    --dark: rgb(129, 127, 127);
     --blacklight: rgb(104, 101, 101);
     --white: #fff;
     --blue: #3440ab;
@@ -36,11 +36,17 @@ body {
 
 .navbar {
     background: var(--light) !important;
-    /* border-bottom: 1px dotted gray; */
 }
 
 .navbar-nav .nav-item {
     margin-left: 1rem;
+}
+
+.navbar-brand h2 {
+    color: var(--black);
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
 }
 
 .nav-item .nav-link {
@@ -56,6 +62,10 @@ body {
 
 .navbar-toggler {
     border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15em !important;
 }
 
 .fa-bars {
@@ -241,6 +251,27 @@ footer {
     animation: animate-preloader 1s linear infinite;
 }
 
+.bar {
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+.bar i {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 @-webkit-keyframes animate-preloader {
     0% {
         transform: rotate(0deg);
@@ -259,7 +290,7 @@ footer {
     }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
     .passport-res {
         width: 50%;
         height: 50%;
@@ -272,7 +303,7 @@ footer {
         align-items: center;
     }
     .navbar-nav {
-        margin-top: 1rem;
+        margin-top: 0.7rem;
     }
     div .ball-animate {
         display: none;

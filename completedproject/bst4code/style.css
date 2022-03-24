@@ -3,6 +3,10 @@
     color: black;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .top-bar {
     font-size: 1.1rem;
     background: #02a1fd;
