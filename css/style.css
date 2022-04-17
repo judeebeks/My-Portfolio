@@ -200,13 +200,14 @@ div .ball-animate:nth-child(2) {
 }
 
 .top-arrow {
-    bottom: 70px !important;
-    right: 50px !important;
+    position: fixed;
+    bottom: 3em !important;
+    right: 7em !important;
 }
 
 .top-arrow-link {
-    color: var(--redlight);
     cursor: pointer;
+    color: var(--redlight);
     transition: 0.3s;
 }
 
@@ -254,21 +255,6 @@ footer {
 .bar {
     position: relative;
     margin: auto;
-    display: none;
-}
-
-.bar i {
-    position: absolute;
-    color: #fff;
-    font-size: 35px;
-}
-
-input[type="checkbox"] {
-    -webkit-appearance: none;
-    display: none;
-}
-
-#check {
     display: none;
 }
 

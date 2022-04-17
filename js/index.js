@@ -1,5 +1,5 @@
 const presentYear = document.querySelector("#year");
-const backToTop = document.querySelector(".top-arrow-link");
+const backToTop = document.querySelector(".top-arrow");
 const preloader = document.querySelector("#preloader");
 const NewDate = new Date();
 
